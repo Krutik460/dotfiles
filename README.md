@@ -1,4 +1,4 @@
-# laptop-setup
+# ai-setup
 
 My personal Mac setup, managed with Homebrew and plain symlinks.
 One repo, one script, and a fresh Mac ends up configured the same way every time.
@@ -35,8 +35,8 @@ Running `bootstrap.sh` sets up:
 On a brand new Mac, from a bare clone of this repo:
 
 ```sh
-git clone https://github.com/Krutik460/laptop-setup.git
-cd laptop-setup
+git clone https://github.com/Krutik460/ai-setup.git
+cd ai-setup
 ./bootstrap.sh
 ```
 
