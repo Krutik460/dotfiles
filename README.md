@@ -1,10 +1,10 @@
-# dotfiles
+# laptop-setup
 
 My personal Mac setup, managed with Homebrew and plain symlinks.
 One repo, one script, and a fresh Mac ends up configured the same way every time.
 
-This is a fork of [kunchenguid/dotfiles](https://github.com/kunchenguid/dotfiles).
-The upstream repo manages everything with nix-darwin and home-manager; this fork dropped Nix entirely in favor of Homebrew plus direct symlinks.
+This setup started from [kunchenguid/dotfiles](https://github.com/kunchenguid/dotfiles), which manages everything with nix-darwin and home-manager.
+This repo dropped Nix entirely in favor of Homebrew plus direct symlinks, and its history starts fresh from that point.
 
 ## Contributing / Using This Repo
 
@@ -22,7 +22,7 @@ Running `bootstrap.sh` sets up:
 - Shell (zsh with autosuggestions and syntax highlighting, aliases, starship prompt)
 - Terminal (WezTerm config with the rose-pine moon theme, dimmed unfocused windows, Hack Nerd Font)
 - Editor config (Neovim config with the rose-pine moon theme; Neovim itself isn't installed - `brew install neovim` if you want it)
-- Agent configs (Claude, Codex, opencode all share one AGENTS.md)
+- Agent configs (Claude, Codex, opencode all share one AGENTS.md; Claude also gets the repo-authored skills under `home/.claude/skills/`)
 - Optional Pi theme and local extensions, generic UI settings and model overrides, plus two deliberately pinned third-party Pi packages
 - herdr plugins and its Claude integration
 
@@ -35,8 +35,8 @@ Running `bootstrap.sh` sets up:
 On a brand new Mac, from a bare clone of this repo:
 
 ```sh
-git clone https://github.com/Krutik460/dotfiles.git
-cd dotfiles
+git clone https://github.com/Krutik460/laptop-setup.git
+cd laptop-setup
 ./bootstrap.sh
 ```
 
